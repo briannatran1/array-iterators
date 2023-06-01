@@ -23,6 +23,7 @@ correctly for a meetup organised in 10-years-time. The example above assumes tha
 
 function addUsername(list) {
   return list.map(function(obj){
-    obj.username = obj.firstName.toLowerCase() + obj.lastName[0].toLowerCase() + 2020 - obj.age;
+    obj.username = obj.firstName.toLowerCase() + obj.lastName[0].toLowerCase() + (new Date().getFullYear() - obj.age);
+    return obj;
   });
 }
