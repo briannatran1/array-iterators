@@ -22,5 +22,5 @@ function rotate(str){
     let rotated = str.slice(index) + str.slice(0, index);
     acc.push(rotated);
     return acc;
-  }, []);
+  }, []).concat(str).slice(1);
 }
