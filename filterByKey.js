@@ -11,3 +11,9 @@ function filterByKey(objs, keyName) {
         }
     });
 }
+
+//or 
+function filterByKey(objs, keyName){
+    return objs.filter(obj => obj.hasOwnProperty(keyName));
+}
+
